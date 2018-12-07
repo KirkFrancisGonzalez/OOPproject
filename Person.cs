@@ -3,30 +3,40 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 
-namespace OOP_project
+namespace OOP_Project
 {
-    class Person
+    public class Person
     {
+        
+
         public string FirstName;
         public string MiddleInitial;
         public string LastName;
         public string Birthdate;
         public string Address;
 
-        public Person()
+        public Person(string firstName, string middleInitial, string lastName)
         {
-           
+            
+            FirstName = firstName;
+            MiddleInitial = middleInitial;
+            LastName = lastName;
+
         }
 
-        public string FullName()
+        public string GetFullName()
         {
-            return null;
+            LastName = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(LastName);
+
+            return string.Format(FirstName.First().ToString().ToUpper() + FirstName.Substring(1).ToLower() + " " + MiddleInitial.ToString().ToUpper()
+               + "." + " " + LastName.First().ToString().ToUpper()) + LastName.Substring(1).ToLower();
         }
 
-        public int GetAge()
+        internal object GetFullName(object firstName, object middleInitial, object lastName)
         {
-            return 0;
+            throw new NotImplementedException();
         }
     }
 }

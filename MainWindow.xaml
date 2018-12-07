@@ -1,0 +1,50 @@
+﻿<Window x:Class="OOP_Project.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OOP_Project"
+        mc:Ignorable="d"
+        Title="LAZAPEE" Height="450" Width="600"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid Background="#FF142B3D">
+        <Border BorderBrush="#FFFE5420" BorderThickness="1" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="272"/>
+        <Label Content="FIRST NAME:&#xA;" Foreground="White" HorizontalAlignment="Left" Height="27" Margin="32,43,0,0" VerticalAlignment="Top" Width="78"/>
+        <TextBox x:Name="txtFname"  HorizontalAlignment="Left" Height="20" Margin="115,43,0,0" TextWrapping="Wrap" Text="&#xA;" VerticalAlignment="Top" Width="143" RenderTransformOrigin="0.494,0.783"/>
+        <Label Content="MIDDLE INITIAL:" Foreground="White" HorizontalAlignment="Left" Height="24" Margin="17,75,0,0" VerticalAlignment="Top" Width="98"/>
+        <TextBox x:Name="txtMiddleInitial" HorizontalAlignment="Left" Height="21" Margin="115,78,0,0" TextWrapping="Wrap" Text="&#xA;" VerticalAlignment="Top" Width="143"/>
+        <Label Content="LAST NAME:" Foreground="White" HorizontalAlignment="Left" Height="24" Margin="32,111,0,0" VerticalAlignment="Top" Width="80"/>
+        <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Height="20" Margin="115,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143"/>
+        <Button x:Name="btntransaction" Content="TRANSACTION" HorizontalAlignment="Left" Height="29" Margin="115,286,0,0" VerticalAlignment="Top" Width="115" FontSize="10" Click="Button_Click"/>
+        <ComboBox x:Name="cmbItems" HorizontalAlignment="Left" Height="20" Margin="115,219,0,0" VerticalAlignment="Top" Width="143" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem Content="Necklace"/>
+            <ComboBoxItem Content="Bracelet"/>
+            <ComboBoxItem Content="Ring"/>
+            <ComboBoxItem Content="Earings"/>
+
+        </ComboBox>
+        <Label Content="ITEM:" Foreground="White" HorizontalAlignment="Left" Margin="64,216,0,0" VerticalAlignment="Top" Width="46"/>
+        <Label Content="QUANTITY:" Foreground="White" HorizontalAlignment="Left" Margin="37,247,0,0" VerticalAlignment="Top" Width="78"/>
+        <Button x:Name="btnrecommend" Content="Recommend" HorizontalAlignment="Left" Height="22" Margin="28,372,0,0" VerticalAlignment="Top" Width="82" Click="Button_Click_1"/>
+        <Label Content="ADDRESS:" Foreground="White" HorizontalAlignment="Left" Height="25" Margin="42,152,0,0" VerticalAlignment="Top" Width="68"/>
+        <TextBox x:Name="txtAddress" HorizontalAlignment="Left" Height="25" Margin="115,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143"/>
+        <TextBox x:Name="txtBirthDate" HorizontalAlignment="Left" Height="27" Margin="115,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143"/>
+        <Label Content="BIRTHDAY:" Foreground="White" HorizontalAlignment="Left" Margin="41,185,0,0" VerticalAlignment="Top" Width="69"/>
+        <ComboBox x:Name="cmbQuantity" HorizontalAlignment="Left" Height="26" Margin="115,247,0,0" VerticalAlignment="Top" Width="40">
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+
+        </ComboBox>
+        <Border BorderBrush="#FFFE5420" BorderThickness="1" HorizontalAlignment="Left" Height="419" Margin="296,0,0,0" VerticalAlignment="Top" Width="296" Background="#FFFE5420">
+            <Border BorderBrush="#FF142B3D" BorderThickness="1" HorizontalAlignment="Left" Height="399" Margin="9,9,0,0" VerticalAlignment="Top" Width="276">
+
+                <Image Source="C:\Users\kfagonzalez\source\repos\OOP_Project\OOP_Project\shopee-lazada-logos (1).png" HorizontalAlignment="Left" Height="42" Margin="70,316,0,0" VerticalAlignment="Top" Width="137"/>
+            </Border>
+        </Border>
+        <Image  Source="shopee-lazada-logos.png" HorizontalAlignment="Left" Height="37" Margin="112,332,0,0" VerticalAlignment="Top" Width="118"/>
+    </Grid>
+</Window>
