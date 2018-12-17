@@ -15,10 +15,10 @@
         <Label Content="Price :" HorizontalAlignment="Left" Height="29" Margin="13,201,0,0" VerticalAlignment="Top" Width="85" FontSize="16"/>
         <Label Content="Promised Date :" HorizontalAlignment="Left" Height="40" Margin="10,261,0,0" VerticalAlignment="Top" Width="130" FontSize="16"/>
         <ComboBox HorizontalAlignment="Left" Height="29" Margin="103,83,0,0" VerticalAlignment="Top" Width="161"/>
-        <TextBox HorizontalAlignment="Left" Height="31" Margin="122,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142"/>
+        <TextBox HorizontalAlignment="Left" Height="31" Margin="104,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
         <DatePicker HorizontalAlignment="Left" Margin="145,261,0,0" VerticalAlignment="Top" Height="27" Width="131"/>
         <TextBlock HorizontalAlignment="Left" Height="29" Margin="122,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontSize="16"/>
-        <Button Content="To Main" HorizontalAlignment="Left" Height="37" Margin="172,313,0,0" VerticalAlignment="Top" Width="143" FontSize="16" Click="Button_Click_1"/>
+        <Button Content="Complete Order" HorizontalAlignment="Left" Height="37" Margin="104,306,0,0" VerticalAlignment="Top" Width="143" FontSize="16" Click="Button_Click_1"/>
 
     </Grid>
 </Window>

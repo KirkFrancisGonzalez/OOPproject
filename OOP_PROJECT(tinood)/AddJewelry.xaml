@@ -7,12 +7,32 @@
         mc:Ignorable="d"
         Title="AddJewelry" Height="295.652" Width="289.13" WindowStartupLocation="CenterScreen" WindowStyle="None">
     <Grid>
-        <Button Content="Add" HorizontalAlignment="Left" Height="39" Margin="81,177,0,0" VerticalAlignment="Top" Width="125" FontSize="16" Click="Button_Click"/>
-        <Label Content="Type :" HorizontalAlignment="Left" Height="34" Margin="20,27,0,0" VerticalAlignment="Top" Width="61" FontSize="16"/>
-        <Label Content="Quantity : &#xD;&#xA;" HorizontalAlignment="Left" Height="34" Margin="20,92,0,0" VerticalAlignment="Top" Width="84" FontSize="16"/>
-        <ComboBox HorizontalAlignment="Left" Height="34" Margin="81,27,0,0" VerticalAlignment="Top" Width="147"/>
-        <TextBox HorizontalAlignment="Left" Height="34" Margin="109,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="122" FontSize="16"/>
-        <Rectangle Fill="#FFD1124D" HorizontalAlignment="Left" Height="21" Margin="0,1,0,0" Stroke="Black" VerticalAlignment="Top" Width="281"/>
+        <Rectangle Fill="#FF007AFF" 
+            HorizontalAlignment="Left"
+            Height="46"
+            VerticalAlignment="Top"
+            Width="282" Margin="0,48,0,0"/>
+
+        <Rectangle Fill="#FF001F42" 
+            HorizontalAlignment="Left"
+            Height="48"
+            VerticalAlignment="Top"
+            Width="282"/>
+        <Label Content="Type :" HorizontalAlignment="Left" Height="34" Margin="10,108,0,0" VerticalAlignment="Top" Width="61" FontSize="16" Foreground="Black" RenderTransformOrigin="0.535,0.35"/>
+        <Label Content="Quantity : &#xA;" HorizontalAlignment="Left" Height="34" Margin="0,159,0,0" VerticalAlignment="Top" Width="84" FontSize="16"/>
+        <ComboBox HorizontalAlignment="Left" Height="34" Margin="76,108,0,0" VerticalAlignment="Top" Width="147" BorderBrush="{x:Null}" Background="White" Foreground="Black"/>
+        <TextBox HorizontalAlignment="Left" Height="34" Margin="84,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139" FontSize="16"/>
+        <Rectangle Fill="#FF001F42" 
+            HorizontalAlignment="Left"
+            Height="48"
+            VerticalAlignment="Top"
+            Width="282" Margin="0,242,0,-0.4"/>
+        <Rectangle Fill="#FF007AFF" 
+            HorizontalAlignment="Left"
+            Height="44"
+            VerticalAlignment="Top"
+            Width="282" Margin="0,198,0,0"/>
+        <Button Content="Add Jewelry" HorizontalAlignment="Left" Height="44" Margin="59,198,0,0" VerticalAlignment="Top" Width="174" FontSize="16" Click="Button_Click" BorderBrush="{x:Null}" Background="#FF52A2F9" Foreground="Black"/>
 
     </Grid>
 </Window>
