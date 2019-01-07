@@ -11,29 +11,6 @@
         WindowStartupLocation="CenterScreen"
         WindowStyle="None">
     <Grid Margin="0,0,0,2">
-
-        <Rectangle Fill="#FF001F42" 
-            HorizontalAlignment="Left"
-            Height="69"
-            VerticalAlignment="Top"
-            Width="608" Margin="0,446,0,-18.8"/>
-
-        <Rectangle 
-            HorizontalAlignment="Left"
-            Height="61"
-            VerticalAlignment="Top"
-            Width="608" Margin="0,389,0,0" Fill="#FF007AFF"/>
-
-        <Rectangle Fill="#FF001F42" 
-                   HorizontalAlignment="Left"
-                   Height="61"
-                   VerticalAlignment="Top"
-                   Width="608" Margin="-1,-5,0,0"/>
-        <Rectangle Fill="#FF007AFF" 
-            HorizontalAlignment="Left"
-            Height="61"
-            VerticalAlignment="Top"
-            Width="608" Margin="0,56,-1,0"/>
         <Button Content="Add Transaction" 
                 HorizontalAlignment="Left" 
                 Height="44" Margin="206,97,0,0" 

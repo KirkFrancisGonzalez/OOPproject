@@ -37,5 +37,10 @@ namespace OOP_PROJECT_tinood_
             main.Show();
             this.Close();
         }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
