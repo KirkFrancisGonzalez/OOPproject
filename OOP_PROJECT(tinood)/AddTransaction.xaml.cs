@@ -42,5 +42,22 @@ namespace OOP_PROJECT_tinood_
         {
 
         }
+
+        private void cmbProduct_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (cmbProduct.Text == "Necklace")
+            {
+                txtblkPrice.Text = Convert.ToString(5000);
+            }
+            else if (cmbProduct.Text == "Bracelet")
+            {
+                txtblkPrice.Text = Convert.ToString(100);
+            }
+            else if (cmbProduct.Text == "Earrings")
+            {
+                txtblkPrice.Text = Convert.ToString(300);
+            }
+            
+        }
     }
 }

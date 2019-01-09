@@ -65,7 +65,7 @@
                   Height="29" 
                   Margin="103,83,0,0"
                   VerticalAlignment="Top" 
-                  Width="161">
+                  Width="161" SelectionChanged="cmbProduct_SelectionChanged">
          <ComboBoxItem Content="Necklace"/>
          <ComboBoxItem Content="Earrings"/>
          <ComboBoxItem Content="Ring"/>
@@ -86,7 +86,7 @@
                     Height="27"
                     Width="131"/>
         <TextBlock HorizontalAlignment="Left" 
-                   Name="txtPrice"
+                   Name="txtblkPrice"
                    Height="29" 
                    Margin="122,201,0,0" 
                    TextWrapping="Wrap" 

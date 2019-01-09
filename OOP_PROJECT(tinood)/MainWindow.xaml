@@ -32,7 +32,8 @@
                 FontFamily="MS Reference Sans Serif"
                 BorderBrush="{x:Null}" 
                 Foreground="White"/>
-        <ListBox HorizontalAlignment="Left" 
+        <ListBox x:Name="lstBox"
+            HorizontalAlignment="Left" 
                  Height="206" 
                  Margin="91,235,0,0" 
                  VerticalAlignment="Top" 
