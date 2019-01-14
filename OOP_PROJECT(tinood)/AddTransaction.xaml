@@ -9,7 +9,9 @@
         Height="408.453" 
         Width="448.592" 
         WindowStartupLocation="CenterScreen" 
-        WindowStyle="None">
+        WindowStyle="None"
+        Activated="Window_Activated">
+        
     <Grid>
         <Label Content="Customer :" 
                HorizontalAlignment="Left" 

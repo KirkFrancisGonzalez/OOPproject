@@ -90,6 +90,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PersonClass.cs" />
+    <Compile Include="ProductClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

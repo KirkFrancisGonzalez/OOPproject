@@ -19,6 +19,7 @@ namespace OOP_PROJECT_tinood_
     /// </summary>
     public partial class AddCustomer : Window
     {
+        public DataStorage data;
         public AddCustomer()
         {
             InitializeComponent();
@@ -26,6 +27,8 @@ namespace OOP_PROJECT_tinood_
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            PersonClass customer = new PersonClass(txtFname.Text, txtLname.Text, txtMname.Text);
+            data.customers.Add(customer);
             AddTransaction trans = new AddTransaction();
             trans.Show();
             this.Close();

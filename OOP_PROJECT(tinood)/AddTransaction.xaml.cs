@@ -19,6 +19,7 @@ namespace OOP_PROJECT_tinood_
     /// </summary>
     public partial class AddTransaction : Window
     {
+        public DataStorage data;
         public AddTransaction()
         {
             InitializeComponent();
@@ -26,13 +27,32 @@ namespace OOP_PROJECT_tinood_
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            
+            
             AddCustomer addcus = new AddCustomer();
+            addcus.data = data;
             addcus.Show();
             this.Close();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            PersonClass customer = new PersonClass(txtFname.Text, txtLname.Text, txtMname.Text);
+            bool exist = false;
+            foreach (PersonClass cust in data.customers)
+            {
+                if(customer.GetFullName() == cust.GetFullName())
+                {
+                    exist = true;
+                    break;
+                }
+            }
+            if (!exist)
+                data.customers.Add(customer);
+            else
+                MessageBox.Show("The name you have entered is already in the system");
+            
+            
             MainWindow main = new MainWindow();
             main.Show();
             this.Close();
@@ -57,7 +77,14 @@ namespace OOP_PROJECT_tinood_
             {
                 txtblkPrice.Text = Convert.ToString(300);
             }
-            
+
         }
+        private void Window_Activated(object sender, EventArgs e)
+        {
+            foreach (PersonClass customer in data.customers)
+                cmbCustomer.Items.Add(customer.GetFullName());
+
+        }
+        
     }
 }
